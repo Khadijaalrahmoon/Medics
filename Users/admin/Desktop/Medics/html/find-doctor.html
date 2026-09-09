@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find a Doctor | Medics</title>
+
+    <link rel="stylesheet" href="../css/find-doctor.css">
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <div class="heart-icon">
+                ♡
+            </div>
+
+            <h2>Medics</h2>
+
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="find-doctor.html" class="active">
+                    Doctors
+                </a>
+            </li>
+
+            <li>
+                <a href="#">About</a>
+            </li>
+
+        </ul>
+
+
+        <div class="nav-buttons">
+
+            <button class="login-btn">
+                Login
+            </button>
+
+            <button class="signup-btn">
+                Sign Up
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+
+        <!-- Title -->
+        <section class="hero">
+
+            <h1>
+                Find the Right Doctor for You
+            </h1>
+
+            <p>
+                Search and book an appointment with trusted doctors.
+            </p>
+
+        </section>
+
+
+
+        <!-- Search and Filter -->
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span class="search-icon">
+                    🔍
+                </span>
+
+                <input type="text" id="searchInput" placeholder="Search doctor by name...">
+
+            </div>
+
+
+
+            <select id="specialtyFilter">
+
+                <option value="all">
+                    All Specialties
+                </option>
+
+                <option value="dermatologist">
+                    Dermatologist
+                </option>
+
+                <option value="neurologist">
+                    Neurologist
+                </option>
+
+                <option value="pediatrician">
+                    Pediatrician
+                </option>
+
+                <option value="orthopedic">
+                    Orthopedic
+                </option>
+
+                <option value="ophthalmologist">
+                    Ophthalmologist
+                </option>
+
+            </select>
+
+        </section>
+
+
+
+        <!-- Doctors -->
+        <section class="doctors-grid">
+
+
+            <!-- Doctor 1 -->
+            <div class="doctor-card" data-name="ahmad khalil" data-specialty="dermatologist">
+
+                <img src="../images/doctor1.jpg" alt="Dr. Ahmad Khalil">
+
+                <div class="doctor-info">
+
+                    <h2>
+                        Dr. Ahmad Khalil
+                    </h2>
+
+                    <p class="specialty">
+                        Dermatologist
+                    </p>
+
+                    <p class="rating">
+                        ⭐ 4.8
+                    </p>
+
+                    <button class="profile-btn">
+                        View Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Doctor 2 -->
+            <div class="doctor-card" data-name="lina hassan" data-specialty="dermatologist">
+
+                <img src="../images/doctor2.jpg" alt="Dr. Lina Hassan">
+
+                <div class="doctor-info">
+
+                    <h2>
+                        Dr. Lina Hassan
+                    </h2>
+
+                    <p class="specialty">
+                        Dermatologist
+                    </p>
+
+                    <p class="rating">
+                        ⭐ 4.7
+                    </p>
+
+                    <button class="profile-btn">
+                        View Profile
+                    </button>
+                </div>
+
+            </div>
+
+
+
+            <!-- Doctor 3 -->
+            <div class="doctor-card" data-name="omar saeed" data-specialty="neurologist">
+
+                <img src="../images/doctor3.jpg" alt="Dr. Omar Saeed">
+
+                <div class="doctor-info">
+
+                    <h2>
+                        Dr. Omar Saeed
+                    </h2>
+
+                    <p class="specialty">
+                        Neurologist
+                    </p>
+
+                    <p class="rating">
+                        ⭐ 4.8
+                    </p>
+
+                    <button class="profile-btn">
+                        View Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Doctor 4 -->
+            <div class="doctor-card" data-name="sarah ahmed" data-specialty="pediatrician">
+
+                <img src="../images/doctor4.jpg" alt="Dr. Sarah Ahmed">
+
+                <div class="doctor-info">
+
+                    <h2>
+                        Dr. Sarah Ahmed
+                    </h2>
+
+                    <p class="specialty">
+                        Pediatrician
+                    </p>
+
+                    <p class="rating">
+                        ⭐ 4.7
+                    </p>
+
+                    <button class="profile-btn">
+                        View Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Doctor 5 -->
+            <div class="doctor-card" data-name="rami naji" data-specialty="orthopedic">
+
+                <img src="../images/doctor5.jpg" alt="Dr. Rami Naji">
+
+                <div class="doctor-info">
+
+                    <h2>
+                        Dr. Rami Naji
+                    </h2>
+
+                    <p class="specialty">
+                        Orthopedic
+                    </p>
+
+                    <p class="rating">
+                        ⭐ 4.7
+                    </p>
+
+                    <button class="profile-btn">
+                        View Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Doctor 6 -->
+            <div class="doctor-card" data-name="reem ahmad" data-specialty="ophthalmologist">
+
+                <img src="../images/doctor6.jpg" alt="Dr. Reem Ahmad">
+
+                <div class="doctor-info">
+
+                    <h2>
+                        Dr. Reem Ahmad
+                    </h2>
+
+                    <p class="specialty">
+                        Ophthalmologist
+                    </p>
+
+                    <p class="rating">
+                        ⭐ 4.8
+                    </p>
+
+                    <button class="profile-btn">
+                        View Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- Message when no doctors found -->
+        <p id="noResults">
+            No doctors found.
+        </p>
+
+
+    </main>
+
+
+    <script src="js/find-doctor.js"></script>
+
+</body>
+
+</html>

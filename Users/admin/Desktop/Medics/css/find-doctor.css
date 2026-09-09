@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fc;
+    color: #1f2937;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 85px;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.logo h2 {
+    font-size: 23px;
+    color: #1d3f72;
+}
+
+
+.heart-icon {
+    font-size: 38px;
+    font-weight: bold;
+    color: #111827;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 55px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #1f2937;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+    color: #315c9b;
+}
+
+
+.nav-links .active {
+    font-weight: 600;
+}
+
+
+.nav-buttons {
+    display: flex;
+    gap: 25px;
+}
+
+
+.login-btn,
+.signup-btn {
+    padding: 10px 24px;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.login-btn {
+    background-color: white;
+    border: 1px solid #274b7c;
+    color: #274b7c;
+}
+
+
+.login-btn:hover {
+    background-color: #eef3fa;
+}
+
+
+.signup-btn {
+    background-color: #274b7c;
+    color: white;
+
+    border: none;
+}
+
+
+.signup-btn:hover {
+    background-color: #1c3b67;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.container {
+    width: 90%;
+    margin: auto;
+
+    padding: 60px 0 80px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #171b24;
+}
+
+
+.hero p {
+    font-size: 20px;
+    color: #4b5563;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    margin-bottom: 55px;
+}
+
+
+.search-box {
+    width: 52%;
+    position: relative;
+}
+
+
+.search-box input {
+    width: 100%;
+
+    padding: 14px 20px 14px 48px;
+
+    font-size: 18px;
+
+    border: 1px solid #60708a;
+    border-radius: 5px;
+
+    outline: none;
+}
+
+
+.search-box input:focus {
+    border-color: #274b7c;
+}
+
+
+.search-icon {
+    position: absolute;
+
+    left: 15px;
+    top: 12px;
+
+    font-size: 20px;
+}
+
+
+#specialtyFilter {
+    width: 280px;
+
+    padding: 14px 15px;
+
+    font-size: 17px;
+
+    border: 1px solid #60708a;
+    border-radius: 5px;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+
+/* =========================
+   DOCTORS GRID
+========================= */
+
+.doctors-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 55px 35px;
+
+    max-width: 1150px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   DOCTOR CARD
+========================= */
+
+.doctor-card {
+    background-color: white;
+
+    border: 2px solid #46628a;
+    border-radius: 10px;
+
+    padding: 14px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    min-height: 175px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+
+.doctor-card img {
+    width: 105px;
+    height: 135px;
+
+    object-fit: cover;
+
+    border-radius: 3px;
+}
+
+
+.doctor-info {
+    flex: 1;
+}
+
+
+.doctor-info h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+
+    color: #222936;
+}
+
+
+.specialty {
+    font-size: 16px;
+    color: #6b7280;
+
+    margin-bottom: 15px;
+}
+
+
+.rating {
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+
+.profile-btn {
+    padding: 9px 20px;
+
+    background-color: white;
+
+    border: 1px solid #274b7c;
+    border-radius: 5px;
+
+    color: #274b7c;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.profile-btn:hover {
+    background-color: #274b7c;
+    color: white;
+}
+
+
+/* =========================
+   NO RESULTS
+========================= */
+
+#noResults {
+    display: none;
+    text-align: center;
+
+    margin-top: 40px;
+
+    font-size: 20px;
+
+    color: #6b7280;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .doctors-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+
+    .nav-links {
+        gap: 25px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .nav-links {
+        gap: 20px;
+    }
+
+
+    .container {
+        width: 92%;
+    }
+
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+
+    .hero p {
+        font-size: 17px;
+    }
+
+
+    .search-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .search-box {
+        width: 100%;
+    }
+
+
+    #specialtyFilter {
+        width: 100%;
+    }
+
+
+    .doctors-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
+    .doctor-card {
+        min-height: 160px;
+    }
+
+}
