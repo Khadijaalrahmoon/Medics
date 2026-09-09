@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Dashboard | Medics</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/patient-dashboard.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <span>Medics</span>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+
+                <a href="#" class="nav-item active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search Doctor</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>My appointments</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <span>My profile</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+
+                <a href="#" class="nav-item logout">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Log Out</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="main-content">
+
+            <!-- Top Bar -->
+
+            <header class="top-bar">
+
+                <div></div>
+
+                <div class="top-icons">
+
+                    <button class="icon-button">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+
+                    <button class="icon-button">
+                        <i class="fa-regular fa-circle-user"></i>
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- Welcome -->
+
+            <section class="welcome">
+
+                <h1>Good Morning ,Sara</h1>
+
+            </section>
+
+
+            <!-- ================= UPCOMING APPOINTMENT ================= -->
+
+            <section class="upcoming-section">
+
+                <h2 class="section-title">
+                    Upcoming appointments
+                </h2>
+
+                <div class="upcoming-card">
+
+                    <!-- Doctor -->
+
+                    <div class="appointment-doctor">
+
+<img src="../images/doctor.JPG" alt="Dr. Ahmad Khalil">
+                        <div class="appointment-info">
+
+                            <h3>Dr.Ahmad khalil</h3>
+
+                            <p class="specialty">
+                                Dermatology
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Date and Time -->
+
+                    <div class="appointment-date">
+
+                        <p>
+                            15/sep/2026
+                        </p>
+
+                        <p class="appointment-time">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                            10:00AM
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- Details Button -->
+
+                    <button class="details-btn">
+                        view details
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= MY APPOINTMENTS ================= -->
+
+            <section class="appointments-section">
+
+                <h2 class="section-title">
+                    My appointments
+                </h2>
+
+
+                <div class="appointments-card">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Doctor</th>
+                                <th>Specialty</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <!-- Appointment 1 -->
+
+                            <tr>
+
+                                <td>Dr.Ahmed Khalil</td>
+
+                                <td>Dermatology</td>
+
+                                <td>15/sep/2026</td>
+
+                                <td>10:00AM</td>
+
+                                <td>
+                                    <span class="status confirmed">
+                                        Confirmed
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- Appointment 2 -->
+
+                            <tr>
+
+                                <td>Dr.salma Ahmed</td>
+
+                                <td>Medicine</td>
+
+                                <td>17/sep/2026</td>
+
+                                <td>12:00AM</td>
+
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- Appointment 3 -->
+
+                            <tr>
+
+                                <td>Dr.Marwan Dawood</td>
+
+                                <td>Orthopaedics</td>
+
+                                <td>19/sep/2026</td>
+
+                                <td>11:00AM</td>
+
+                                <td>
+                                    <span class="status confirmed">
+                                        Confirmed
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="../js/patient-dashboard.js"></script>
+
+</body>
+
+</html>
