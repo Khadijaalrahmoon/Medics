@@ -1,0 +1,164 @@
+!<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up - Medics</title>
+
+    <link rel="stylesheet" href="css/signup.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="signup-page">
+
+        <div class="signup-card">
+
+            <!-- Logo -->
+            <div class="signup-logo">
+                <span class="signup-logo-icon">♥</span>
+                <span>Medics</span>
+            </div>
+
+            <!-- Header -->
+            <div class="signup-header">
+                <h1>Create Your Account</h1>
+                <p>Join us and take care of your health.</p>
+            </div>
+
+            <!-- Form -->
+            <form class="signup-form" onsubmit="createAccount(event)">
+
+                <!-- Full Name -->
+                <div class="signup-field">
+                    <label for="fullName">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+                <!-- Email -->
+                <div class="signup-field">
+                    <label for="signupEmail">Email</label>
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <!-- Password -->
+                <div class="signup-field">
+                    <label for="signupPassword">Password</label>
+
+                    <div class="signup-password-box">
+                        <input
+                            type="password"
+                            id="signupPassword"
+                            placeholder="Enter your password"
+                            required>
+
+                        <button
+                            type="button"
+                            class="signup-show-password"
+                            onclick="toggleSignupPassword('signupPassword', this)">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="signup-field">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <div class="signup-password-box">
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                            required>
+
+                        <button
+                            type="button"
+                            class="signup-show-password"
+                            onclick="toggleSignupPassword('confirmPassword', this)">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- User Type -->
+                <div class="signup-field">
+                    <label>I am a:</label>
+
+                    <div class="user-type">
+                        <label class="user-option">
+                            <input type="radio" name="userType" value="patient" required>
+                            <span>Patient</span>
+                        </label>
+
+                        <label class="user-option">
+                            <input type="radio" name="userType" value="doctor">
+                            <span>Doctor</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Create Account -->
+                <button type="submit" class="signup-submit">
+                    Create Account
+                </button>
+
+            </form>
+
+            <!-- Login -->
+            <div class="signup-login">
+                Already have an account?
+                <a href="logn.html">Login</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function toggleSignupPassword(inputId, button) {
+
+            const passwordInput = document.getElementById(inputId);
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                button.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+            } else {
+                passwordInput.type = "password";
+                button.innerHTML = '<i class="fa-solid fa-eye"></i>';
+            }
+        }
+
+
+        function createAccount(event) {
+
+            event.preventDefault();
+
+            const password = document.getElementById("signupPassword").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return;
+            }
+
+            alert("Account created successfully!");
+        }
+    </script>
+
+</body>
+
+</html>

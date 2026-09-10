@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medics Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/index.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+
+            <span>Medics</span>
+        </div>
+
+        <nav class="menu">
+
+            <a href="#" class="menu-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>My appointments</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-regular fa-circle-user"></i>
+                <span>My profile</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Log Out</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <div class="top-header">
+            <h1>Good Morning , Dr Ahmad</h1>
+            <span class="sun"></span>
+        </div>
+
+
+        <!-- CARDS -->
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">
+                    <i class="fa-regular fa-calendar-check"></i>
+                </div>
+
+                <strong>12</strong>
+
+                <span>
+                    Today's<br>
+                    Appointment
+                </span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+
+                <strong>48</strong>
+
+                <span>Total Payment</span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">
+                    <i class="fa-regular fa-clipboard"></i>
+                </div>
+
+                <strong>8</strong>
+
+                <span>
+                    Pending<br>
+                    Appointment
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- APPOINTMENTS -->
+        <section class="appointments">
+
+            <h2>Todays Appointments</h2>
+
+            <div class="appointment-list">
+
+
+                <div class="appointment">
+
+                    <span class="time">10:00 AM</span>
+
+                    <img
+                        src="https://randomuser.me/api/portraits/men/32.jpg"
+                        class="patient-image"
+                        alt="Samer Ahmad"
+                    >
+
+                    <span class="patient-name">
+                        Samer Ahmad
+                    </span>
+
+                    <button class="status confirmed">
+                        Confirmed
+                    </button>
+
+                </div>
+
+
+                <div class="appointment">
+
+                    <span class="time">10:00 AM</span>
+
+                    <img
+                        src="https://randomuser.me/api/portraits/women/44.jpg"
+                        class="patient-image"
+                        alt="Maya Ali"
+                    >
+
+                    <span class="patient-name">
+                        Maya Ali
+                    </span>
+
+                    <button class="status pending">
+                        Pending
+                    </button>
+
+                </div>
+
+
+                <div class="appointment">
+
+                    <span class="time">10:00 AM</span>
+
+                    <img
+                        src="https://randomuser.me/api/portraits/men/45.jpg"
+                        class="patient-image"
+                        alt="Ali Hassan"
+                    >
+
+                    <span class="patient-name">
+                        Ali Hassan
+                    </span>
+
+                    <button class="status confirmed">
+                        Confirmed
+                    </button>
+
+                </div>
+
+
+                <div class="appointment">
+
+                    <span class="time">10:00 AM</span>
+
+                    <img
+                        src="https://randomuser.me/api/portraits/men/68.jpg"
+                        class="patient-image"
+                        alt="Omar Khaled"
+                    >
+
+                    <span class="patient-name">
+                        Omar Khaled
+                    </span>
+
+                    <button class="status confirmed">
+                        Confirmed
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- JavaScript -->
+<script src="../js/index.js"></script>
+
+</body>
+</html>
