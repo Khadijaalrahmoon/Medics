@@ -1,0 +1,547 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* =========================
+   Dashboard
+========================= */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   Sidebar
+========================= */
+
+.sidebar {
+    width: 180px;
+    min-height: 100vh;
+
+    border-right: 1px solid #e5e5e5;
+
+    background: #ffffff;
+}
+
+
+/* =========================
+   Logo
+========================= */
+
+.logo {
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    color: #174e9c;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.logo i {
+    font-size: 18px;
+}
+
+
+/* =========================
+   Sidebar Navigation
+========================= */
+
+.sidebar-nav {
+    padding: 22px 12px;
+}
+
+
+.nav-item {
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 12px;
+
+    margin-bottom: 8px;
+
+    color: #999999;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    border-radius: 6px;
+
+    transition: 0.2s;
+}
+
+
+.nav-item i {
+    width: 18px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+.nav-item:hover {
+    color: #174e9c;
+}
+
+
+.nav-item.active {
+    color: #174e9c;
+
+    font-weight: 600;
+}
+
+
+.logout {
+    margin-top: 5px;
+}
+
+
+/* =========================
+   Main Content
+========================= */
+
+.main-content {
+    flex: 1;
+
+    padding: 0 48px 60px 32px;
+
+    max-width: 1100px;
+}
+
+
+/* =========================
+   Top Bar
+========================= */
+
+.top-bar {
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.top-icons {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.icon-button {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    color: #174e9c;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   Welcome
+========================= */
+
+.welcome {
+    margin-top: 43px;
+
+    margin-bottom: 10px;
+}
+
+
+.welcome h1 {
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   Section Titles
+========================= */
+
+.section-title {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   Upcoming Appointment
+========================= */
+
+.upcoming-section {
+    margin-top: 0;
+}
+
+
+.upcoming-card {
+    width: 100%;
+
+    min-height: 170px;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 6px;
+
+    padding: 20px 22px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    background: #ffffff;
+}
+
+
+/* =========================
+   Doctor Information
+========================= */
+
+.appointment-doctor {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-left: 20px;
+}
+
+
+.appointment-doctor img {
+    width: 90px;
+
+    height: 110px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 12px;
+}
+
+
+.appointment-info h3 {
+    font-size: 19px;
+
+    margin-bottom: 12px;
+}
+
+
+.specialty {
+    font-size: 12px;
+
+    color: #222222;
+}
+
+
+/* =========================
+   Date and Time
+========================= */
+
+.appointment-date {
+    margin-left: auto;
+
+    align-self: center;
+
+    text-align: left;
+
+    font-size: 12px;
+
+    margin-right: 5px;
+}
+
+
+.appointment-time {
+    margin-top: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.appointment-time i {
+    color: #000000;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   Details Button
+========================= */
+
+.details-btn {
+    position: absolute;
+
+    right: 22px;
+
+    bottom: 14px;
+
+    width: 76px;
+
+    height: 27px;
+
+    border: 1px solid #174e9c;
+
+    background: #ffffff;
+
+    color: #174e9c;
+
+    border-radius: 5px;
+
+    font-size: 9px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.details-btn:hover {
+    background: #174e9c;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   My Appointments
+========================= */
+
+.appointments-section {
+    margin-top: 20px;
+}
+
+
+.appointments-card {
+    width: 100%;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 6px;
+
+    padding: 20px 22px;
+
+    background: #ffffff;
+}
+
+
+/* =========================
+   Table
+========================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+}
+
+
+thead th {
+    text-align: left;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    padding-bottom: 18px;
+}
+
+
+tbody td {
+    font-size: 8px;
+
+    padding: 9px 0;
+
+    vertical-align: middle;
+}
+
+
+/* =========================
+   Status
+========================= */
+
+.status {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 40px;
+
+    height: 18px;
+
+    padding: 0 7px;
+
+    border-radius: 4px;
+
+    font-size: 7px;
+}
+
+
+.status.confirmed {
+    border: 1px solid #76d58d;
+
+    color: #55bd70;
+
+    background: #f8fff9;
+}
+
+
+.status.pending {
+    border: 1px solid #e5e94e;
+
+    color: #d3d500;
+
+    background: #fffff7;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 160px;
+    }
+
+
+    .main-content {
+        padding: 0 25px 50px 25px;
+    }
+
+
+    .appointment-doctor {
+        margin-left: 10px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        width: 65px;
+    }
+
+
+    .logo span,
+    .nav-item span {
+        display: none;
+    }
+
+
+    .nav-item {
+        justify-content: center;
+
+        padding: 0;
+    }
+
+
+    .main-content {
+        padding: 0 18px 40px;
+    }
+
+
+    .upcoming-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        padding-bottom: 55px;
+    }
+
+
+    .appointment-doctor {
+        margin-left: 0;
+    }
+
+
+    .appointment-date {
+        margin-left: 0;
+
+        margin-right: 0;
+    }
+
+
+    .details-btn {
+        right: 20px;
+
+        bottom: 15px;
+    }
+
+
+    .appointments-card {
+        overflow-x: auto;
+    }
+
+
+    table {
+        min-width: 600px;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .appointment-doctor img {
+        width: 75px;
+
+        height: 95px;
+    }
+
+
+    .appointment-info h3 {
+        font-size: 16px;
+    }
+
+}

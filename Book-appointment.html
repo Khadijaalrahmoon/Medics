@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment - Medics</title>
+  <link rel="stylesheet" href="Book-appointment.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-nav">
+    <div class="logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+      <span>Medics</span>
+    </div>
+    <a href="#" class="back-link">&lsaquo; Back</a>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h1>Book an Appointment</h1>
+    <p>Fill the details to book your appointment.</p>
+  </section>
+
+  <!-- Main Content Layout -->
+  <main class="container">
+    
+    <!-- Left Column: Selection Form -->
+    <div class="left-column">
+      
+      <!-- Doctor Info Card -->
+      <label class="section-title">Doctor</label>
+      <div class="doctor-card">
+        <div class="doctor-avatar">
+          <img src="../image/ahmaddoktor.jpeg" alt="Dr. Ahmad Khalil">
+        </div>
+        <div class="doctor-details">
+          <h3>Dr. Ahmad Khalil</h3>
+          <p>Cardiologist</p>
+        </div>
+      </div>
+
+      <!-- Calendar Component -->
+      <label class="section-title">Select Date</label>
+      <div class="calendar-card">
+        <div class="calendar-header">
+          <button class="nav-btn">&lsaquo;</button>
+          <span>September 2026</span>
+          <button class="nav-btn">&rsaquo;</button>
+        </div>
+        
+        <div class="calendar-grid weekdays">
+          <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+        </div>
+        
+        <div class="calendar-grid days">
+          <span class="inactive">30</span><span class="inactive">31</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+          <span>6</span><span>7</span><span>8</span><span>9</span><span class="selected">10</span><span>11</span><span>12</span>
+          <span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span>
+          <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span>
+          <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+        </div>
+      </div>
+
+      <!-- Time Slot Selection -->
+      <label class="section-title">Select Time</label>
+      <div class="time-grid">
+        <button class="time-btn">09:00 AM</button>
+        <button class="time-btn active">10:00 AM</button>
+        <button class="time-btn">11:30 AM</button>
+        <button class="time-btn">02:00 PM</button>
+        <button class="time-btn">02:30 PM</button>
+        <button class="time-btn">04:00 PM</button>
+      </div>
+
+    </div>
+
+    <!-- Right Column: Summary Box -->
+    <div class="right-column">
+      <div class="summary-card">
+        <h2>Appointment Summary</h2>
+        <div class="summary-item">
+          <span>Doctor &ndash;</span> <strong>Dr. Ahmad Khalil</strong>
+        </div>
+        <div class="summary-item">
+          <span>Specialty &ndash;</span> <strong>Cardiology</strong>
+        </div>
+        <div class="summary-item">
+          <span>Date &ndash;</span> <strong>September 8, 2026</strong>
+        </div>
+        <div class="summary-item">
+          <span>Time &ndash;</span> <strong>10:00 AM</strong>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>
